@@ -11,7 +11,7 @@ body.noflow {
 	align-items: center;
 	width: 100%;
 	height: 50px;
-	padding: 0 2rem;
+	padding: 0 1rem;
 	background-color: var(--primary-color-dark);
 	box-shadow: 0 0 15px -7px var(--highlight-color);
 
@@ -45,7 +45,7 @@ body.noflow {
 .burger-menu {
 	position: fixed;
 	top: 2px;
-	right: 2rem;
+	right: 1rem;
 	z-index: 99;
 	display: flex;
 	flex-direction: column;
@@ -53,6 +53,9 @@ body.noflow {
 	gap: 5px;
 	padding: 1rem;
 	cursor: pointer;
+	@media (width > 769px) {
+		display: none;
+	}
 	div {
 		width: 25px;
 		height: 2px;

@@ -8,7 +8,7 @@ export const Hero = () => {
 
 		"In the past i started by creating content for a startup. And after learning different skills ranging from product management to maintaining the wordpress-webshop, I proposed and executed the redesigning for the companies webshop, resulting in a 20% increase in profit over 2 years and stronger customer retention.",
 
-		"In my spare time, I'm exploring new programming languages and staying active, teaching and dancing salsa and ballroom, my original profession and one of my ongoing passions.",
+		"In my spare time, I'm learning python and staying active, teaching and dancing salsa and ballroom.",
 	];
 
 	const chapters = [
@@ -16,9 +16,9 @@ export const Hero = () => {
 			start: "03/2025",
 			end: "05/2025",
 			title: "Internship at Munich Software Studios",
-			text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus enim fugit sint voluptate ab quo molestiae dicta earum. Molestias nisi quidem molestiae provident, repellat dolore ducimus animi ipsam minus impedit doloremque eum cupiditate fuga nulla quisquam, quaerat dolorum optio magnam. Amet error consectetur dolores quis dolorem hic sit, laborum enim!",
+			text: "During my internship at Munich Software Studios, I contributed to full-stack development projects in a fast-paced, agile environment. My work involved building responsive, user-friendly interfaces using React and Next.js, implementing server-side logic with Node.js and Express, and integrating MongoDB databases. I also participated in UI/UX refinement, delivering pixel-perfect components and proposing interaction improvements. This experience sharpened my ability to write clean, modular code, and strengthened my problem-solving and collaboration skills in real-world production workflows.",
 			tech: [
-				"Javascript",
+				"JavaScript",
 				"Typescript",
 				"React",
 				"Next.js",
@@ -34,12 +34,12 @@ export const Hero = () => {
 			start: "03/2024",
 			end: "03/2025",
 			title: "Bootcamp Fullstack Development at DCI",
-			text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus enim fugit sint voluptate ab quo molestiae dicta earum. Molestias nisi quidem molestiae provident, repellat dolore ducimus animi ipsam minus impedit doloremque eum cupiditate fuga nulla quisquam, quaerat dolorum optio magnam. Amet error consectetur dolores quis dolorem hic sit, laborum enim!",
+			text: "At DCI, I completed a comprehensive 12-month full-stack development program focused on modern web technologies. The curriculum covered HTML, CSS, JavaScript, React, Node.js, Express and MongoDB, along with tools like GitHub, Tailwind, and Bootstrap. Through project-based learning and agile methodologies, I built scalable frontends and robust backend systems. The program also included career coaching and soft-skill development, preparing me to work confidently in team environments and technical settings.",
 			tech: [
 				"HTML",
 				"CSS",
 				"SCSS",
-				"Javascript",
+				"JavaScript",
 				"React",
 				"Tailwind",
 				"Bootstrap",
@@ -53,15 +53,15 @@ export const Hero = () => {
 			start: "06/2022",
 			end: "01/2023",
 			title: "Redesign Wordpress Onlineshop at Libacco.de",
-			text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus enim fugit sint voluptate ab quo molestiae dicta earum. Molestias nisi quidem molestiae provident, repellat dolore ducimus animi ipsam minus impedit doloremque eum cupiditate fuga nulla quisquam, quaerat dolorum optio magnam. Amet error consectetur dolores quis dolorem hic sit, laborum enim!",
-			tech: ["Wordpress", "HTML", "CSS", "Javascrip"],
+			text: "I initiated ad led the complete redesign of Libacco's WordPress-based webshop. From design concept to final deployment, I implemented a more intuitive and visually appealing layout using WordPress with additional HTML, CSS, and JavaScript. The redesign resulted in a 200% increase in revenue over two years and significantly improved customer retention by enhanching the shopping experience.",
+			tech: ["Wordpress", "HTML", "CSS", "JavaScrip"],
 		},
 		{
 			start: "01/2023",
 			end: "01/2024",
 			title: "Maintain Wordpress Onlineshop at Libacco.de",
-			text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus enim fugit sint voluptate ab quo molestiae dicta earum. Molestias nisi quidem molestiae provident, repellat dolore ducimus animi ipsam minus impedit doloremque eum cupiditate fuga nulla quisquam, quaerat dolorum optio magnam. Amet error consectetur dolores quis dolorem hic sit, laborum enim!",
-			tech: ["Wordpress", "HTML", "CSS", "Javascrip"],
+			text: "Following the redesign, I continued maintaining and optimizing the WordPress webshop. I handled content updates, plugin integrations and bug fixes. My role included ongoing performance monitoring and improvements, helping the platform remain stable, secure, and customer-friendly",
+			tech: ["Wordpress", "HTML", "CSS", "JavaScrip"],
 		},
 	];
 	return (

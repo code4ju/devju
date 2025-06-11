@@ -18,7 +18,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 1rem;
-		padding: 2rem;
+		padding: 1rem;
 		@media (width < 1024px) {
 			position: relative;
 		}
@@ -53,7 +53,7 @@
 			display: flex;
 			flex-direction: column;
 			gap: 1rem;
-			padding: 2rem;
+			padding: 1rem;
 		}
 		.timeline {
 			display: flex;
@@ -64,7 +64,7 @@
 				display: flex;
 				max-width: 100%;
 				word-wrap: break-word;
-				padding: 2rem;
+				padding: 2rem 1rem 2rem 1rem;
 				border-radius: 10px;
 				border-top: 1px solid rgba(255, 255, 255, 0);
 				transition: all 0.25s ease-in-out;
