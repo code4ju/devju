@@ -47,7 +47,7 @@ export const Header = () => {
 						className="menu-icon"
 						href="/">
 						<img
-							src="/logo-m.png"
+							src="/logo-full-xs-white.png"
 							alt=""
 						/>
 					</a>
