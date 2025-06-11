@@ -1,6 +1,16 @@
 import "./Hero.scss";
 
 export const Hero = () => {
+	const introduction = [
+		"I am a Full Stack Developer Apprentice focused on clean, scalable applications. I specialize in building pixel-perfect frontends and robust backend architechtures using JavaScript, React, Node.js and Express.",
+
+		"After the 12-month Full-Stack Development Program at DCI - Digital Career Institute, I deepened my experience at Munich Software Studios, contributing to multiple projects built with React, Vue.js, and Next.js. I collaborated in agile teams, wrote reusable components. and supproted production-ready deployments.",
+
+		"In the past i started by creating content for a startup. And after learning different skills ranging from product management to maintaining the wordpress-webshop, I proposed and executed the redesigning for the companies webshop, resulting in a 20% increase in profit over 2 years and stronger customer retention.",
+
+		"In my spare time, I'm exploring new programming languages and staying active, teaching and dancing salsa and ballroom, my original profession and one of my ongoing passions.",
+	];
+
 	const chapters = [
 		{
 			start: "03/2025",
@@ -57,6 +67,7 @@ export const Hero = () => {
 	return (
 		<>
 			<div className="hero-wrapper">
+				<div className="teaser-placeholder"></div>
 				<div className="teaser">
 					<h1 className="name">Ju-Yong Chang</h1>
 					<p className="job-description">
@@ -74,37 +85,9 @@ export const Hero = () => {
 				</div>
 				<main>
 					<section className="introduction">
-						<p>
-							I am a Full Stack Developer Apprentice focused on
-							clean, scalable applications. I specialize in
-							building pixel-perfect frontends and robust backend
-							architechtures using JavaScript, React, Node.js and
-							Express.
-						</p>
-						<p>
-							After com;leting the 12-month Full-Stack Development
-							Program at DCI - Digital Career Institute, I
-							deepened my expereiece at Munich Software Studios,
-							contributing to multiple projects built with React,
-							Vue.js, and Next.js. I collaborated in agile teams,
-							wrote reusable components. and supproted
-							production-ready deployments.
-						</p>
-						<p>
-							In the past i started by creating content for a
-							startup. And after learning different skills ranging
-							from product management to maintaining the
-							wordpress-webshop, I proposed and executed the
-							redesigning for the companies webshop, resulting in
-							a 20% increase in profit over 2 years and stronger
-							customer retention.
-						</p>
-						<p>
-							In my spare time, I'm exploring new programming
-							languages and staying active, teaching and dancing
-							salsa and ballroom, my original profession and one
-							of my ongoing passions.
-						</p>
+						{introduction.map((intro, index) => (
+							<p key={`${intro[22]}-${index}}`}>{intro}</p>
+						))}
 					</section>
 					<section className="timeline">
 						{chapters.map((chapter) => (
