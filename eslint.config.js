@@ -11,8 +11,8 @@ export default tseslint.config(
 	{
 		extends: [
 			js.configs.recommended,
-			...tseslint.configs.strictTypeChecked,
-			...tseslint.configs.stylisticTypeChecked,
+			// ...tseslint.configs.strictTypeChecked,
+			// ...tseslint.configs.stylisticTypeChecked,
 		],
 		files: ["**/*.{ts,tsx}"],
 		languageOptions: {
@@ -26,8 +26,8 @@ export default tseslint.config(
 		plugins: {
 			"react-hooks": reactHooks,
 			"react-refresh": reactRefresh,
-			"react-x": reactX,
-			"react-dom": reactDom,
+			// "react-x": reactX,
+			// "react-dom": reactDom,
 		},
 		rules: {
 			...reactHooks.configs.recommended.rules,

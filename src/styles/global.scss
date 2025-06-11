@@ -1,0 +1,98 @@
+@import "@fontsource/inter/200.css";
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/600.css";
+
+:root {
+	--primary-color: #00ffe5;
+	--secondary-color: #ffa600;
+	--highlight-color: #ff6600;
+	--text-color: #222222;
+	--font-base: "Inter", sans-serif;
+	--text-size: 1.2rem;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	color: var(--text-color);
+	line-height: 1.5;
+	overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 200;
+}
+
+p,
+a,
+span {
+	font-size: var(--text-size);
+	font-weight: 600;
+}
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2.5rem;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+h4,
+h5,
+h6 {
+	font-size: 2rem;
+}
+
+a {
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+li {
+	list-style-type: none;
+}
+
+.outer {
+	width: 100vw;
+}
+
+.inner {
+	margin: 0 auto;
+	@media (width > 1440px) {
+		max-width: 1440px;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.rel {
+	position: relative;
+}
+
+.abs {
+	position: absolute;
+}
+
+.mt1 {
+	margin-top: 0.5rem;
+}
+
+.mt2 {
+	margin-top: 1rem;
+}
