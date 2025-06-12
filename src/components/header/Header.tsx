@@ -48,14 +48,20 @@ export const Header = () => {
 			<body className={noflow}>
 				<div className="header-wrapper">
 					{/* IMAGE */}
-					<a
-						className="menu-icon"
-						href="/">
-						<img
-							src="/logo-full-xs-white.png"
-							alt=""
-						/>
-					</a>
+					<div className="menu-left">
+						<a
+							className="menu-icon"
+							href="/">
+							<img
+								src="/logo-full-xs-white.png"
+								alt=""
+							/>
+						</a>
+						<div className="language">
+							<span>🇬🇧</span>
+							<span>🇩🇪</span>
+						</div>
+					</div>
 					{/* DESKTOP NAV */}
 					<nav>
 						<ul>

@@ -15,12 +15,23 @@ body.noflow {
 	background-color: var(--primary-color-dark);
 	box-shadow: 0 0 15px -7px var(--highlight-color);
 
-	.menu-icon {
+	.menu-left {
 		display: flex;
 		align-items: center;
-		padding: 1rem;
-		img {
-			height: 1.5rem;
+		.menu-icon {
+			display: flex;
+			align-items: center;
+			padding: 1rem;
+			img {
+				height: 1.5rem;
+			}
+		}
+		.language {
+			display: flex;
+			gap: 10px;
+			span {
+				font-size: 1.5rem;
+			}
 		}
 	}
 
