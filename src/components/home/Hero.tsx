@@ -2,13 +2,12 @@ import "./Hero.scss";
 
 export const Hero = () => {
 	const introduction = [
-		"I am a Full Stack Developer Apprentice focused on clean, scalable applications. I specialize in building pixel-perfect frontends and robust backend architechtures using JavaScript, React, Node.js and Express.",
-
-		"After the 12-month Full-Stack Development Program at DCI - Digital Career Institute, I deepened my experience at Munich Software Studios, contributing to multiple projects built with React, Vue.js, and Next.js. I collaborated in agile teams, wrote reusable components. and supproted production-ready deployments.",
-
-		"In the past i started by creating content for a startup. And after learning different skills ranging from product management to maintaining the wordpress-webshop, I proposed and executed the redesigning for the companies webshop, resulting in a 20% increase in profit over 2 years and stronger customer retention.",
-
-		"In my spare time, I'm learning python and staying active, teaching and dancing salsa and ballroom.",
+		[
+			"I am a Junior Full Stack Developer focused on clean, scalable applications. I specialize in building pixel-perfect frontends and robust backend architechtures using JavaScript, React, Node.js and Express.",
+			"After the 12-month Full-Stack Development Program at DCI - Digital Career Institute, I deepened my experience at Munich Software Studios, contributing to multiple projects built with React, Vue.js, and Next.js. I collaborated in agile teams, wrote reusable components and supported production-ready deployments.",
+			"In the past I started by creating content for a startup. And after learning different skills ranging from product management to maintaining the wordpress-webshop, I proposed and executed the redesigning for the companies webshop, resulting in a 200% increase in profit over 2 years and stronger customer retention.",
+			"In my spare time, I'm learning python and staying active, teaching and dancing salsa and ballroom.",
+		],
 	];
 
 	const chapters = [
@@ -34,7 +33,7 @@ export const Hero = () => {
 			start: "03/2024",
 			end: "03/2025",
 			title: "Bootcamp Fullstack Development at DCI",
-			text: "At DCI, I completed a comprehensive 12-month full-stack development program focused on modern web technologies. The curriculum covered HTML, CSS, JavaScript, React, Node.js, Express and MongoDB, along with tools like GitHub, Tailwind, and Bootstrap. Through project-based learning and agile methodologies, I built scalable frontends and robust backend systems. The program also included career coaching and soft-skill development, preparing me to work confidently in team environments and technical settings.",
+			text: "At DCI, I completed a comprehensive 12-month full-stack development program focused on modern web technologies. The curriculum covered HTML, CSS, JavaScript, React, Node.js, Express and MongoDB, along with tools like GitHub, Tailwind and Bootstrap. Through project-based learning and agile methodologies, I built scalable frontends and robust backend systems. The program also included career coaching and soft-skill development, preparing me to work confidently in team environments and technical settings.",
 			tech: [
 				"HTML",
 				"CSS",
@@ -50,18 +49,18 @@ export const Hero = () => {
 			],
 		},
 		{
-			start: "06/2022",
-			end: "01/2023",
-			title: "Redesign Wordpress Onlineshop at Libacco.de",
-			text: "I initiated ad led the complete redesign of Libacco's WordPress-based webshop. From design concept to final deployment, I implemented a more intuitive and visually appealing layout using WordPress with additional HTML, CSS, and JavaScript. The redesign resulted in a 200% increase in revenue over two years and significantly improved customer retention by enhanching the shopping experience.",
-			tech: ["Wordpress", "HTML", "CSS", "JavaScrip"],
-		},
-		{
 			start: "01/2023",
 			end: "01/2024",
 			title: "Maintain Wordpress Onlineshop at Libacco.de",
 			text: "Following the redesign, I continued maintaining and optimizing the WordPress webshop. I handled content updates, plugin integrations and bug fixes. My role included ongoing performance monitoring and improvements, helping the platform remain stable, secure, and customer-friendly",
-			tech: ["Wordpress", "HTML", "CSS", "JavaScrip"],
+			tech: ["Wordpress", "HTML", "CSS", "JavaScript"],
+		},
+		{
+			start: "06/2022",
+			end: "01/2023",
+			title: "Redesign Wordpress Onlineshop at Libacco.de",
+			text: "I initiated ad led the complete redesign of Libacco's WordPress-based webshop. From design concept to final deployment, I implemented a more intuitive and visually appealing layout using WordPress with additional HTML, CSS, and JavaScript. The redesign resulted in a 200% increase in revenue over two years and significantly improved customer retention by enhanching the shopping experience.",
+			tech: ["Wordpress", "HTML", "CSS", "JavaScript"],
 		},
 	];
 	return (
@@ -69,19 +68,59 @@ export const Hero = () => {
 			<div className="hero-wrapper">
 				<div className="teaser-placeholder"></div>
 				<div className="teaser">
-					<h1 className="name">Ju-Yong Chang</h1>
-					<p className="job-description">
-						Software Developer | Frontend && Backend
-					</p>
-					{/* <div className="intro-text"> */}
-					<p>
-						I build accessible, pixel-perfect
-						<br />
-						digital experiences for the web.
-					</p>
+					<div className="teaser-top">
+						<h1>Ju-Yong Chang</h1>
+						<p className="job-description">
+							Software Developer | Front & Backend
+						</p>
+						{/* <div className="intro-text"> */}
+						<p>
+							I build accessible, pixel-perfect
+							<br />
+							digital experiences for the web.
+						</p>
 
-					{/* </div> */}
-					<p>Let's chat...</p>
+						{/* </div> */}
+						<p>Let's chat...</p>
+					</div>
+					<div className="teaser-icons">
+						<img
+							src="/vscode-icons_file-type-vscode.svg"
+							alt=""
+						/>
+						<img
+							src="/logos_git-icon.svg"
+							alt=""
+						/>
+						<img
+							src="/vscode-icons_file-type-html.svg"
+							alt=""
+						/>
+						<img
+							src="/vscode-icons_file-type-css.svg"
+							alt=""
+						/>
+						<img
+							src="/logos_sass.svg"
+							alt=""
+						/>
+						<img
+							src="/vscode-icons_file-type-tailwind.svg"
+							alt=""
+						/>
+						<img
+							src="/logos_bootstrap.svg"
+							alt=""
+						/>
+						<img
+							src="/vscode-icons_file-type-js-official.svg"
+							alt=""
+						/>
+						<img
+							src="/logos_react.svg"
+							alt=""
+						/>
+					</div>
 				</div>
 				<main>
 					<section className="introduction">

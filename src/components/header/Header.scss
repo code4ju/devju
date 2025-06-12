@@ -88,7 +88,7 @@ body.noflow {
 }
 
 .mobile-nav {
-	position: absolute;
+	position: fixed;
 	z-index: 10;
 	top: 0;
 	right: -85vw;
