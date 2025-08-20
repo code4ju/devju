@@ -59,7 +59,7 @@ export const Hero = () => {
 			start: "06/2022",
 			end: "01/2023",
 			title: "Redesign Wordpress Onlineshop at Libacco.de",
-			text: "I initiated ad led the complete redesign of Libacco's WordPress-based webshop. From design concept to final deployment, I implemented a more intuitive and visually appealing layout using WordPress with additional HTML, CSS, and JavaScript. The redesign resulted in a 200% increase in revenue over two years and significantly improved customer retention by enhanching the shopping experience.",
+			text: "I initiated and led the complete redesign of Libacco's WordPress-based webshop. From design concept to final deployment, I implemented a more intuitive and visually appealing layout using WordPress with additional HTML, CSS, and JavaScript. The redesign resulted in a 200% increase in revenue over two years and significantly improved customer retention by enhanching the shopping experience.",
 			tech: ["Wordpress", "HTML", "CSS", "JavaScript"],
 		},
 	];

@@ -2,14 +2,17 @@ import { useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { useEscape } from "../../hooks/useEscape.jsx"
 import "./Header.scss";
 
 export const Header = () => {
+
 	const [isMobile, setIsMobile] = useState(false);
 	const [mobileMenuClass, setMobileMenuClass] = useState("");
 	const [burgerClass, setBurgerClass] = useState("");
 	//: prevent overflow when mobile nav is active
-	const [noflow, setNoflow] = useState("");
+	//! dont bc body should not be included in compoment 
+	// const [noflow, setNoflow] = useState("");
 
 	const pages = [
 		{
@@ -22,6 +25,8 @@ export const Header = () => {
 		},
 	];
 
+	useEscape("Escape", () => toggleIsMobile())
+	
 	const location = useLocation().pathname;
 	const toggleIsMobile = () => {
 		const mobile = !isMobile;
@@ -29,13 +34,13 @@ export const Header = () => {
 		setMobileMenuClass(mobile ? "mobile-menu-visible" : "");
 
 		if (mobile) {
-			setNoflow("noflow");
+			// setNoflow("noflow");
 			setBurgerClass("merge");
 			setTimeout(() => {
 				setBurgerClass("cross");
 			}, 200);
 		} else {
-			setNoflow("");
+			// setNoflow("");
 			setBurgerClass("merge");
 			setTimeout(() => {
 				setBurgerClass("");
@@ -45,7 +50,7 @@ export const Header = () => {
 
 	return (
 		<>
-			<body className={noflow}>
+			{/* <body className={noflow}> */}
 				<div className="header-wrapper">
 					{/* IMAGE */}
 					<a
@@ -77,7 +82,7 @@ export const Header = () => {
 					</nav>
 					{/* LOGIN */}
 					<div className="nav-login">
-						<FontAwesomeIcon icon={faUser} />
+						{/* {{<FontAwesomeIcon icon={faUser} />}} */}
 					</div>
 				</div>
 				{/* RESPONSIVE MOBILE BURGER */}
@@ -99,7 +104,9 @@ export const Header = () => {
 										location === page.href
 											? "link-active"
 											: ""
-									}`}>
+									}`}
+									onClick={() => toggleIsMobile()}
+									>
 									<NavLink to={page.href}>
 										{page.name}
 									</NavLink>
@@ -109,7 +116,7 @@ export const Header = () => {
 						</ul>
 					</nav>
 				</div>
-			</body>
+			{/* </body> */}
 		</>
 	);
 };
